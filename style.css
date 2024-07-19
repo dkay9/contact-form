@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    font-size: 16px;
+    --Light-Green: hsl(148, 38%, 91%);
+    --Green: hsl(169, 82%, 27%);
+    --Red: hsl(0, 66%, 54%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(186, 15%, 59%);
+    --Dark-Grey: hsl(187, 24%, 22%);
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --ff-text: "Karla", Arial, sans-serif;
+}
+body{
+    background-color: var(--Light-Green);
+}
+.container{
+    width: 500px;
+    background-color: var(--White);
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    font-family: var(--ff-text);
+    color: var(--Dark-Grey);
+    font-size: 24px;
+}
+.nameContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+}
+#firstName, #lastName{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+label{
+    margin-bottom: 5px;
+    font-weight: var(--fw-normal);
+    font-family: var(--ff-text);
+    color: var(--Dark-Grey);
+    font-size: 12px;
+}
+.emailContainer, .queryContainer, .messageContainer, .consentContainer, button{
+    margin-top: 20px;
+}
+#emailInput{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+}
+.radioButtons{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.radioButtons div{
+    /* align-items: center; */
+    gap: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.radioButtons div > label{
+    align-self: center;
+}
+#message{
+    height: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 100%;
+    resize: none;
+}
+button{
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    background-color: var(--Green);
+    border: none;
+    color: var(--White);
+    cursor: pointer;
+}
+.consentContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+.consentContainer div{
+    display: flex;
+    gap: 10px;
+}
+input[type="checkbox"]{
+    width: 13px;
+    height: 13px;
+}

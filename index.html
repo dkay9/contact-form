@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Contact Us</h1>
+
+        <form action="#" >
+            <section class="nameContainer">
+                <div class="nameGroup">
+                    <label for="name">First Name *</label>
+                    <input type="text" id="firstName">
+                    <p></p>
+                </div>
+                <div class="nameGroup">
+                    <label for="name">Last Name *</label>
+                    <input type="text" id="lastName">
+                    <p></p>
+                </div>
+            </section>
+            <div class="emailContainer">
+                <label for="email">Email Address*</label>
+                <input type="email" id="emailInput">
+                <p></p>
+            </div>
+            <section class="queryContainer">
+                <label for="query">Query Type *</label>
+                <div class="radioButtons">
+                    <div>
+                        <input type="radio" name="query-type" value="general">
+                        <label for="general">General Enquiry</label>  
+                    </div>  
+                    
+                    <div>
+                        <input type="radio" name="query-type" value="support">
+                        <label for="support">Support Request</label>
+                    </div>
+                </div>
+                <p></p>
+            </section>
+            <section class="messageContainer">
+                <label for="Message">Message *</label>
+                <textarea name="message" id="message"></textarea>
+                <p></p>
+            </section>
+            <div class="consentContainer">
+                <div>
+                    <input type="checkbox">
+                    <label for="consent">I consent to being contacted by the team *</label>
+                </div>
+                <p></p>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+  <!-- First Name
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
